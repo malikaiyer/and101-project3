@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="Create an account"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/AgreementDesc"
+        android:layout_width="336dp"
+        android:layout_height="52dp"
+        android:text="By continuing, you agree to our User Agreement and Privacy Policy"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/Agreement"
+        android:layout_width="301dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17sp"
+        android:text="I agree to get emails about cool stuff on doggit"
+        app:layout_constraintStart_toStartOf="@+id/AgreementDesc"
+        app:layout_constraintTop_toBottomOf="@+id/AgreementDesc" />
+
+    <Button
+        android:id="@+id/GoogleLogin"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="Continue with Google"
+        android:textColor="@color/true_blue"
+        app:strokeColor="@color/true_blue"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Agreement" />
+
+    <Button
+        android:id="@+id/AppleLogin"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:text="Continue with Apple"
+        android:textColor="@color/true_blue"
+        app:strokeColor="@color/true_blue"
+        app:strokeWidth="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/GoogleLogin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/GoogleLogin"
+        app:layout_constraintTop_toBottomOf="@+id/GoogleLogin" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="40sp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:padding="10sp"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="@+id/AppleLogin"
+        app:layout_constraintStart_toStartOf="@+id/AppleLogin"
+        app:layout_constraintTop_toBottomOf="@+id/AppleLogin" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:layout_marginTop="10sp"
+        android:hint="Username"
+        android:padding="10sp"
+        android:inputType="text"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="@+id/emailInput"
+        app:layout_constraintStart_toStartOf="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:layout_marginTop="10sp"
+        android:hint="Password"
+        android:padding="10sp"
+        android:inputType="textPassword"
+        android:background="@color/gray_light"
+        app:layout_constraintEnd_toEndOf="@+id/usernameInput"
+        app:layout_constraintStart_toStartOf="@+id/usernameInput"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInput" />
+
+    <Button
+        android:id="@+id/Continue"
+        android:layout_width="309dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orange"
+        android:text="Continue"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+        app:layout_constraintStart_toStartOf="@+id/passwordInput"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="52dp"
+        android:layout_height="153dp"
+        android:layout_marginBottom="616dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reddit_logo_on_white_background_vector" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
